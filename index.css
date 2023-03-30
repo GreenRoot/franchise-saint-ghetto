@@ -1,0 +1,149 @@
+::selection {
+  background: #93705F; /* Safari */
+}
+::-moz-selection {
+  background: #93705F; /* Firefox */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: #2b2831;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background-color: #000;
+  height: 100%;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.promo {
+  display: flex;
+	justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  min-height: 512px;
+  margin: 0 15px;
+  /*border: 1px solid white;*/
+}
+.promo__image svg {
+	width: 400px;
+	height: 400px;
+}
+.shadow {
+	filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.25));
+}
+.motivation {
+  position: relative;
+  max-width: 360px;
+}
+.motivation__subtitle {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+.motivation__title {
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 25px;
+}
+.list {
+  padding: 0;
+  margin-bottom: 25px;
+}
+.text {
+  font-size: 14px;
+  color: #DDDDDD;
+}
+.form-wrapper {
+	width: 380px;
+	height: 255px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.input {
+  margin-bottom: 15px;
+  background-color: #2b2831;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 15px;
+	border: 1px solid transparent;
+  color: white;
+}
+.check-box-wr {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.text-marked {
+	margin-left: 10px;
+	color: #2b2831;
+	font-size: 12px;
+  user-select: none;
+}
+.button {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 45px;
+  background-color: #FF5400;
+  border: none;
+  border-radius: 15px;
+  transition: .2s;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: rgba(255, 84, 0, 0.75);
+}
+.is_qform {
+	margin: 0 !important;
+}
+.qform-field__bottom-box {
+	display: none !important;
+}
+form.qform.qform-theme-black .qform-row .qform-field__block_box__field, form.qform.qform-underline-background.qform-theme-black .qform-row .qform-field__block_box__field {
+	background-color: #2b2831 !important;
+}
+form.qform.qform-theme-black .qform-field__submit_agree-box__text {
+	font-size: 12px !important;
+}
+form .qform-field__submit_agree-box__link {
+	color: #FF5400 !important;
+}
+form .qform-field__submit.malachite .qform-field__submit__input {
+	background-color: #FF5400 !important;
+}
+form.qform.qform-background.qform-size-sm .qform-row .qform-field__submit_agree-box label:before {
+	border-radius: 50% !important;
+}
+form.qform.qform-size-sm .qform-row .qform-field {
+	margin-bottom: 15px !important;
+	width: 320px !important;
+}
+input::placeholder {
+	opacity: 0.4 !important;
+	color: rgb(255, 255, 255) !important;
+}
+
+@media (max-width: 800px) {
+	.promo {
+		justify-content: center;
+	}
+	.promo__image {
+		display: none;
+	}
+}
+
